@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Valorant Agents</title>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <script src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700;900&family=Mulish:wght@400;500;600;700&family=Oswald:wght@400;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <body onload="changeWallpaper()">
+        <div id="search-panel">
+            <div id="search-header">
+                <h3>VALORANT AGENTS</h3>
+                <p>Check detailed information of Valorant agents, such as role, description, and abilities</p>
+            </div>
+            <div id="search-box">
+                <div id="search-box-content">
+                    <div id="search-box-input">
+                        <span><img src="images/search-interface-symbol.png" alt="Search Symbol"></span>
+                        <input type="text" id="agent-input" name="agent-name" placeholder="Search agent...">
+                    </div>
+                    <button type="button" onclick="searchAgent()"><span>SEARCH</span></button>
+                </div>
+            </div>
+            <p id="invalid-agent">Agent not found.</p>
+        </div>
+        <div id="agent-info-panel">
+            <div id="agent-info">
+                <h3 id="agent-name"></h3>
+                <div id="agent-content-img">
+                    <div id="agent-content">
+                        <div id="role-div" class="section">
+                            <p class="section-header">/ / &nbspROLE</p>
+                            <p id="role"></p>
+                        </div>
+                        <div id="biography-div" class="section">
+                            <p class="section-header">/ / &nbspBIOGRAPHY</p>
+                            <p id="biography"></p>
+                        </div>
+                        <div id="abilities-div" class="section">
+                            <p class="section-header">/ / &nbspABILITIES</p>
+                            <ul>
+                                <li id="ability1">
+                                    <p id="a1-title"></p>
+                                    <p id="a1-description"></p>
+                                </li>
+                                <li id="ability2">
+                                    <p id="a2-title"></p>
+                                    <p id="a2-description"></p>
+                                </li>
+                                <li id="ability3">
+                                    <p id="a3-title"></p>
+                                    <p id="a3-description"></p>
+                                </li>
+                                <li id="ability4">
+                                    <p id="a4-title"></p>
+                                    <p id="a4-description"></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <img id="agent-img" src="" alt="Agent Image" width="500px">
+                </div>
+                <div id="button-div">
+                    <button id="search-again-button" class="button" type="button" onclick="searchAgain()"><span>Search Again</span></button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

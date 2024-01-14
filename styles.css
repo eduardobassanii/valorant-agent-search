@@ -1,0 +1,205 @@
+#invalid-agent {
+    display: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/valorant-map4.jpg);
+    background-size: cover;
+    color: white;
+}
+
+p {
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+}
+.section-header {
+    font-weight: bold;
+}
+
+#agent-name {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 900;
+    color: #ff4655;
+}
+
+#search-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#search-header h3 {
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 900;
+    font-size: 60;
+    color: #ff4655;
+    margin-bottom: 0px;
+}
+
+#search-header p {
+    text-align: center;
+    font-size: 16px;
+    width: 80%;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+/* Search Box */
+
+#search-box {
+    background-color: white;
+    border-radius: 5px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+#search-box-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+}
+
+#search-box-input {
+    display: flex;
+    margin-left: 16px;
+    align-items: center;
+}
+
+#search-box-content img {
+    height: 20px;
+    width: 20px;
+}
+
+#search-box-content input {
+    outline: none;
+    border: none;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+#search-box-content button {
+    height: 100%;
+    margin-right: 16px;
+    border-radius: 4px;
+    background-color: #ff4655;
+    width: 62px;
+    border: none;
+}
+
+#search-box-content button span {
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+/* Agent Info */
+
+#agent-info-panel {
+    display: none;
+    justify-content: center;
+    height: 100%;
+}
+
+#agent-info {
+    margin-top: 50px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#agent-content-img {
+    display: flex;
+    align-items: flex-start;
+}
+
+#agent-content {
+    width: 50%;
+}
+
+#agent-content p {
+    font-size: 16px;
+}
+
+#agent-name {
+    font-size: 100px;
+    margin: 20px 0;
+}
+
+p#role {
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Heebo', sans-serif;
+    margin: 0;
+}
+
+#abilities-div ul {
+    padding: 0;
+}
+
+#search-again-button {
+    margin-bottom: 70px;
+}
+
+.section {
+    margin-bottom: 60px;
+}
+
+/* Button */
+
+.button {
+    color: white;
+    background: none;
+    border-radius: 10px;
+    border: solid white 1px;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0px;
+    width: 250px;
+    margin-top: 0;
+}
+
+.button:hover {
+    background-color: #ff4655;
+    border: solid #ff4655 1px;
+}
+
+.button span {
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.button:hover span {
+    padding-right: 25px;
+}
+  
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
